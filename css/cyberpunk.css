@@ -11676,6 +11676,11 @@ figure.highlight.foldable div.level-left {
   }
 }
 body {
+  background: url("https://p0.meituan.net/csc/f7eebbe1cf95daa4008f092da227f2ae580921.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+body {
   counter-reset: card;
 }
 ::selection {

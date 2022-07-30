@@ -11674,3 +11674,8 @@ figure.highlight.foldable div.level-left {
     padding: 1.5rem 1rem;
   }
 }
+body {
+  background: url("https://p0.meituan.net/csc/f7eebbe1cf95daa4008f092da227f2ae580921.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
