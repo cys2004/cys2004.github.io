@@ -10270,16 +10270,16 @@ body > .section {
   }
   ::-webkit-scrollbar-track {
     border-radius: 3px;
-    background: rgba(0,0,0,0.06);
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0);
+    box-shadow: inset 0 0 5px rgba(0,0,0,0);
   }
   ::-webkit-scrollbar-thumb {
     border-radius: 3px;
-    background: rgba(0,0,0,0.12);
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0);
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(0,0,0,0.24);
+    background: rgba(0,0,0,0);
   }
 }
 .ml-0,
@@ -11676,7 +11676,6 @@ figure.highlight.foldable div.level-left {
   }
 }
 body {
-  background: url("https://p0.meituan.net/csc/f7eebbe1cf95daa4008f092da227f2ae580921.jpg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
