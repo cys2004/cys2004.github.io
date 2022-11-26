@@ -4,11 +4,24 @@
   
     
     <entry>
+      <title>《关于我在看Icarus文档时发现Edge自带的必应翻译把Youtube翻译成优酷这件事》</title>
+      <link href="/2022/11/26/fy/"/>
+      <url>/2022/11/26/fy/</url>
+      
+        <content type="html"><![CDATA[<p>  抛开法律政策问题不谈，我猜优酷多半是打钱了[doge]</p><span id="more"></span><p><img src="https://m.360buyimg.com/babel/jfs/t1/198198/17/29333/64992/6381bce7E341d2fef/bb4dbc2119a19881.png"></p><p><img src="https://m.360buyimg.com/babel/jfs/t1/62264/33/23086/36671/6381bcb6Efd65f70b/f89e972cde3d55be.png"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>简单盘点一下自己挖的坑</title>
       <link href="/2022/11/26/pd/"/>
       <url>/2022/11/26/pd/</url>
       
-        <content type="html"><![CDATA[<span id="more"></span><p> 以下内容暂未确定次序</p><ul><li><p>JAVA以及C++学习</p></li><li><p>X86汇编、Android逆向</p></li><li><p>Linux相关</p></li><li><p>虚幻引擎</p></li><li><p>基于VITS的人声合成</p></li><li><p>音频后期</p></li><li><p>视频后期</p></li><li><p>世界语、塔语</p></li><li><p>高等数学</p></li><li><p>Minecraft相关</p></li><li><p>CDDA联机可行性探索</p></li><li><p>Rustdesk部署</p></li><li><p>私有IM部署</p></li><li><p>.Net程序设计</p></li><li><p>装修博客</p></li><li><p>基于Difussion Model的NovelAI-Naifu项目本地化部署</p></li></ul><p>（感觉以上这些两年内忙活不完）</p>]]></content>
+        <content type="html"><![CDATA[<p> 各项内容暂未确定次序</p><span id="more"></span><ul><li><p>JAVA以及C++学习</p></li><li><p>X86汇编、Android逆向</p></li><li><p>Linux相关</p></li><li><p>虚幻引擎</p></li><li><p>基于VITS的人声合成</p></li><li><p>音频后期</p></li><li><p>视频后期</p></li><li><p>世界语、塔语</p></li><li><p>高等数学</p></li><li><p>Minecraft相关</p></li><li><p>CDDA联机可行性探索</p></li><li><p>Rustdesk部署</p></li><li><p>私有IM部署</p></li><li><p>.Net程序设计</p></li><li><p>装修博客</p></li><li><p>基于Difussion Model的NovelAI-Naifu项目本地化部署</p></li></ul><p>（感觉以上这些两年内忙活不完）</p>]]></content>
       
       
       
@@ -21,7 +34,7 @@
       <link href="/2022/10/29/ty/"/>
       <url>/2022/10/29/ty/</url>
       
-        <content type="html"><![CDATA[<p>偶闻一良曲【EXEC_COSMOFLIPS&#x2F;.】，遂掘塔语学习之坑，他日当填之。</p><span id="more"></span><iframe src="//player.bilibili.com/player.html?aid=638176521&bvid=BV1eY4y1e7Xs&cid=576307739&page=1" scrolling="yes" border="0" frameborder="yes" framespacing="0" allowfullscreen="true"> </iframe><hr><p>简单贴一点塔语的介绍（来自<a href="https://blog.timedegree.cc/2022/04/05/%E5%A1%94%E8%AF%AD/">时度度Time_Degree</a>的Blog）：</p><blockquote><p><strong>塔语</strong>，亦称<strong>hymmnos语</strong>，是由土屋晓（Akira Tsuchiya）创作的一种自制语言，用于游戏Ar tonelico（魔塔大陆）全系列中。在游戏中，该语言主要是作为<strong>诗魔法语言</strong>使用(hymmnos在游戏中的词义也正是“<strong>诗、诗歌</strong>”)。<br>游戏中的日常生活使用的是叫做<strong>Shell</strong>的其他语言(<del>是不是感觉很熟悉</del>)，Hymmnos对一般人来说则是古代语，也很少被<strong>诗魔法少女</strong>(レーヴァテイル)以外的人使用。诗魔法少女会使用该语言进行诸如咒文、隔壁操作、塔的管理等操作。<br>官方给出的词典并没有涵盖所有单词，且词汇大多与情感、神明、自然、信仰、救赎等有关。可以说是非常适合圣歌等祈祷的歌曲使用的。而在作品外大部分都是以拉丁字符所写的歌曲，但所表述的意义与原塔语无异，故而这种以拉丁字符所构成的塔语才是本文所讲的主要内容，不过过少的单词量难以用其进行日常语言的交流，但可以像游戏内一样做诗歌。<br>一般语言的情感表达是根据句调和音调来表达，而hymmnos语是根据想音来表达自己的情感，不需要借助说话者自身的语调。<br>Hymmnos的用途是<strong>构成咒文</strong>，使歌姬能与塔连接后，通过塔所供给的导力，实现自己的愿望。咒文分为下列3种：</p><ol><li><strong>Hymmnos Extract</strong> – 用于对塔进行控制，使用时需要身份认证，只有拥有特定的Hymmnos code的歌姬可以使用。对于第一世代的Origin歌姬及第二世代的β-纯血种，都固定拥有特定的文字列hymmnos code。可以控制天气，重力，也有可以撼天动地的魔法，以及塔各种环境的控制，塔守卫者(Guardian)的控制等。游戏中的hymmnos即指的是Hymmnos Extract。</li><li><strong>Hymmnos Word</strong> – 也就是所谓的“诗魔法”，所有歌姬均可以使用，通过与自身的Cosmosphere连接，将自己的愿望具现化的过程。Word的多彩程度取决于歌姬自身内心的丰富程度。因此可以由歌姬创作，其威力取决于愿望表达的强烈程度及塔对愿望的回应，而不是具体的文字。</li><li><strong>Hymmnos Spell</strong> – 咒语，不能作为诗使用，其最大特征就是并不由歌姬歌唱，而是为了和歌姬或者塔进行连接，以及进行简单的控制时使用，文法与Word相同。属于在塔内已经预设好的文字列，因此每座塔均不同。人类和歌姬均可咏唱使用。常用于门禁认证，extract的下载等。</li></ol><p>在游戏内，hymmnos语非常古老，早于第一纪时发现音魔法之前便已存在，祈祷师使用的一种被称为“月奏”的咒文便是其前身。在塔出现后，Hymmnos所具有的精确表达歌唱者情感的特点，成为最适合控制塔，与塔进行通信的语言，而被格式化成为hymmnos。随着hymmnos的发展，各地域各教派的单词及格式均发生了细微的变化。</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<p>偶闻一良曲【EXEC_COSMOFLIPS&#x2F;.】，遂掘塔语学习之坑，他日当填之。</p><span id="more"></span><iframe src="//player.bilibili.com/player.html?aid=638176521&bvid=BV1eY4y1e7Xs&cid=576307739&page=1%22" width="scrolling&#x3D;yes" height="border&#x3D;0" frameborder="0" loading="lazy" allowfullscreen></iframe><hr><p>简单贴一点塔语的介绍（来自<a href="https://blog.timedegree.cc/2022/04/05/%E5%A1%94%E8%AF%AD/">时度度Time_Degree</a>的Blog）：</p><blockquote><p><strong>塔语</strong>，亦称<strong>hymmnos语</strong>，是由土屋晓（Akira Tsuchiya）创作的一种自制语言，用于游戏Ar tonelico（魔塔大陆）全系列中。在游戏中，该语言主要是作为<strong>诗魔法语言</strong>使用(hymmnos在游戏中的词义也正是“<strong>诗、诗歌</strong>”)。<br>游戏中的日常生活使用的是叫做<strong>Shell</strong>的其他语言(<del>是不是感觉很熟悉</del>)，Hymmnos对一般人来说则是古代语，也很少被<strong>诗魔法少女</strong>(レーヴァテイル)以外的人使用。诗魔法少女会使用该语言进行诸如咒文、隔壁操作、塔的管理等操作。<br>官方给出的词典并没有涵盖所有单词，且词汇大多与情感、神明、自然、信仰、救赎等有关。可以说是非常适合圣歌等祈祷的歌曲使用的。而在作品外大部分都是以拉丁字符所写的歌曲，但所表述的意义与原塔语无异，故而这种以拉丁字符所构成的塔语才是本文所讲的主要内容，不过过少的单词量难以用其进行日常语言的交流，但可以像游戏内一样做诗歌。<br>一般语言的情感表达是根据句调和音调来表达，而hymmnos语是根据想音来表达自己的情感，不需要借助说话者自身的语调。<br>Hymmnos的用途是<strong>构成咒文</strong>，使歌姬能与塔连接后，通过塔所供给的导力，实现自己的愿望。咒文分为下列3种：</p><ol><li><strong>Hymmnos Extract</strong> – 用于对塔进行控制，使用时需要身份认证，只有拥有特定的Hymmnos code的歌姬可以使用。对于第一世代的Origin歌姬及第二世代的β-纯血种，都固定拥有特定的文字列hymmnos code。可以控制天气，重力，也有可以撼天动地的魔法，以及塔各种环境的控制，塔守卫者(Guardian)的控制等。游戏中的hymmnos即指的是Hymmnos Extract。</li><li><strong>Hymmnos Word</strong> – 也就是所谓的“诗魔法”，所有歌姬均可以使用，通过与自身的Cosmosphere连接，将自己的愿望具现化的过程。Word的多彩程度取决于歌姬自身内心的丰富程度。因此可以由歌姬创作，其威力取决于愿望表达的强烈程度及塔对愿望的回应，而不是具体的文字。</li><li><strong>Hymmnos Spell</strong> – 咒语，不能作为诗使用，其最大特征就是并不由歌姬歌唱，而是为了和歌姬或者塔进行连接，以及进行简单的控制时使用，文法与Word相同。属于在塔内已经预设好的文字列，因此每座塔均不同。人类和歌姬均可咏唱使用。常用于门禁认证，extract的下载等。</li></ol><p>在游戏内，hymmnos语非常古老，早于第一纪时发现音魔法之前便已存在，祈祷师使用的一种被称为“月奏”的咒文便是其前身。在塔出现后，Hymmnos所具有的精确表达歌唱者情感的特点，成为最适合控制塔，与塔进行通信的语言，而被格式化成为hymmnos。随着hymmnos的发展，各地域各教派的单词及格式均发生了细微的变化。</p></blockquote>]]></content>
       
       
       
