@@ -1,11 +1,17 @@
 .is-2-column {
-  background-image: url("https://m.360buyimg.com/babel/jfs/t1/221027/23/22096/203497/6390a721Eb77f604a/b83143c155f1dc0a.jpg");
+  background-image: url("https://m.360buyimg.com/babel/jfs/t1/96199/8/32723/40473/6391a150E94c8b101/3ffcbc0275f50fa1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-.widget,
+background-color rgba(255,
+255,
+0.88),
+.widget {
+  background-color: rgba(255,255,255,0.9);
+}
+.navbar,
 .footer {
-  background-color: rgba(255,255,255,0.94);
+  background-color: rgba(255,255,255,0.84);
 }

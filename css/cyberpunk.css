@@ -10270,16 +10270,16 @@ body > .section {
   }
   ::-webkit-scrollbar-track {
     border-radius: 3px;
-    background: rgba(0,0,0,0);
-    box-shadow: inset 0 0 5px rgba(0,0,0,0);
+    background: rgba(0,0,0,0.06);
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
   }
   ::-webkit-scrollbar-thumb {
     border-radius: 3px;
-    background: rgba(0,0,0,0);
-    box-shadow: inset 0 0 10px rgba(0,0,0,0);
+    background: rgba(0,0,0,0.12);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(0,0,0,0);
+    background: rgba(0,0,0,0.24);
   }
 }
 .ml-0,
@@ -11676,19 +11676,21 @@ figure.highlight.foldable div.level-left {
   }
 }
 .is-2-column {
-  background-image: url("https://m.360buyimg.com/babel/jfs/t1/221027/23/22096/203497/6390a721Eb77f604a/b83143c155f1dc0a.jpg");
+  background-image: url("https://m.360buyimg.com/babel/jfs/t1/96199/8/32723/40473/6391a150E94c8b101/3ffcbc0275f50fa1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-.widget,
-.footer {
-  background-color: rgba(255,255,255,0.94);
+background-color rgba(255,
+255,
+0.88),
+.widget {
+  background-color: rgba(255,255,255,0.9);
 }
-body {
-  background-attachment: fixed;
-  background-size: cover;
+.navbar,
+.footer {
+  background-color: rgba(255,255,255,0.84);
 }
 body {
   counter-reset: card;
