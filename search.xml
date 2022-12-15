@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>下载地址模板&amp;测试</title>
+      <link href="/2022/12/15/download_template/"/>
+      <url>/2022/12/15/download_template/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p> 下载地址模板</p><span id="more"></span><div class="tabs my-3 is- is-fullwidth is-boxed">        <ul class="mx-0 my-0">            <li class="is-active">          <a href="#01">              <span class="icon is-small ml-0">                <i class="fa fa-download" aria-hidden="true"></i>            </span>国内          </a>      </li><li>          <a href="#02">              <span class="icon is-small ml-0">                <i class="fa fa-globe" aria-hidden="true"></i>            </span>海外          </a>      </li>        </ul>    </div>    <div id="01" class="tab-content">          <p><button class="button is-info" onclick='window.open("https://ed.tcea.top/ChaIndex/Softwares/Windows/Media/Player/AnimePipe/AnimePipe_v1.9.5.apk")'>猹盘(推荐)</button></p>      </div><div id="02" class="tab-content is-hidden">          <p><button class="button is-info" onclick='window.open("https://github.com/InfinityLoop1309/AnimePipe/releases/download/v1.9.5/app-release.apk")'>Github</button></p>      </div>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【转载】非走不可的弯路——张爱玲</title>
       <link href="/2022/12/08/winding_roads/"/>
       <url>/2022/12/08/winding_roads/</url>
