@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.tcea.top/2022/07/29/player_test/</loc>
+    
+    <lastmod>2022-12-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.tcea.top/2022/12/08/plugin_test/</loc>
+    
+    <lastmod>2022-12-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.tcea.top/2022/12/08/bulma_template/</loc>
+    
+    <lastmod>2022-12-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.tcea.top/2022/08/06/download_scripts_analysis/</loc>
+    
+    <lastmod>2022-12-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.tcea.top/2022/12/15/download_template/</loc>
     
     <lastmod>2022-12-15</lastmod>
@@ -47,24 +83,6 @@
   </url>
   
   <url>
-    <loc>https://www.tcea.top/2022/12/08/plugin_test/</loc>
-    
-    <lastmod>2022-12-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.tcea.top/2022/07/29/player_test/</loc>
-    
-    <lastmod>2022-12-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.tcea.top/2022/07/29/package_capture/</loc>
     
     <lastmod>2022-12-08</lastmod>
@@ -101,24 +119,6 @@
   </url>
   
   <url>
-    <loc>https://www.tcea.top/2022/08/06/download_scripts_analysis/</loc>
-    
-    <lastmod>2022-12-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.tcea.top/2022/12/08/bulma_examples/</loc>
-    
-    <lastmod>2022-12-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.tcea.top/2022/08/05/argo_tunnel/</loc>
     
     <lastmod>2022-12-08</lastmod>
@@ -130,7 +130,7 @@
 
   <url>
     <loc>https://www.tcea.top/</loc>
-    <lastmod>2022-12-15</lastmod>
+    <lastmod>2022-12-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
