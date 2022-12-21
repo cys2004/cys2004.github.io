@@ -15,8 +15,52 @@
     <atom:link href="https://www.tcea.top/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Thu, 15 Dec 2022 13:36:21 GMT</pubDate>
+    <pubDate>Wed, 21 Dec 2022 00:58:17 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>钉钉直播串流测试</title>
+      <link>https://www.tcea.top/2022/12/21/dingtalk_live/</link>
+      <guid>https://www.tcea.top/2022/12/21/dingtalk_live/</guid>
+      <pubDate>Wed, 21 Dec 2022 00:58:16 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&amp;#x2F;css&quot; href=&quot;https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css&quot;&gt;&lt;link</description>
+          
+        
+      
+      
+      
+      <content:encoded><![CDATA[<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><span id="more"></span><script src="https://fastly.bootcdn.net/ajax/libs/flv.js/1.6.0/flv.js"></script><div id="dplayer"></div><script src="https://fastly.jsdelivr.net/npm/flv.js@1.5.0/dist/flv.min.js"></script><script src="https://fastly.jsdelivr.net/npm/dplayer@1.25.1/dist/DPlayer.min.js"></script><script>    var dp = new DPlayer({        container: document.getElementById('dplayer'),  //播放器容器        screenshot: true,  //截图功能        video:{            url : 'fcddd800-a59b-4aa0-905e-76b7b5f545db.flv?app_type=win&auth_key=1674175799-0-0-678d189ba4ebfd436425c5517438e872&token=b7b8d23d280cba27a7dddffad53691dccFCIt3w8E6XZuZZ0ws6q7ZiYZu0l5fzx60NjCkHSKzobROpU5h4kpJTCmB6mpOd8woj5rZiVGFAqKpMhM5buuKmTLmCbMrY_MSQl5O-l2ZY=&version=6.5.50-Release.11089104',        }    });</script>]]></content:encoded>
+      
+      
+      
+      
+      <comments>https://www.tcea.top/2022/12/21/dingtalk_live/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>利用vConsole下载钉钉直播回放</title>
+      <link>https://www.tcea.top/2022/12/20/dingtalk_liverecord_download/</link>
+      <guid>https://www.tcea.top/2022/12/20/dingtalk_liverecord_download/</guid>
+      <pubDate>Tue, 20 Dec 2022 13:26:19 GMT</pubDate>
+      
+      <description>&lt;p&gt;不出所料，我在学校集中隔离时被检出新冠阳性，因而不得不居家学习。于是，就有了这一次的旧活重整。&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>不出所料，我在学校集中隔离时被检出新冠阳性，因而不得不居家学习。于是，就有了这一次的旧活重整。</p><span id="more"></span>        <div id="aplayer-AvLhVYZL" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-AvLhVYZL"),            narrow: false,            autoplay: false,            showlrc: 3,            music: {              title: "赴梦",              author: "音阙诗听,小魂",              url: "https://files.catbox.moe/c8rv2w.mp3",              pic: "https://p0.meituan.net/csc/c10add4ff3630ebd70af582681006680147805.jpg",              lrc: "https://files.catbox.moe/2p1gtn.lrc"            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><h3 id="配置代理"><a href="#配置代理" class="headerlink" title="配置代理"></a>配置代理</h3><h4 id="配置Fiddler"><a href="#配置Fiddler" class="headerlink" title="配置Fiddler"></a>配置Fiddler</h4><p>在Fiddler里启用解密HTTPS流量并安装好根证书（不了解根证书的话勾选“解密HTTPS流量”后在弹出的窗口里一路点“是”即可），同时确保Fiddler为系统默认代理。</p><p><img src="https://p0.meituan.net/csc/732ddebc7a986453f3819b63c5bd57ff15397.png"></p><h4 id="修改钉钉代理"><a href="#修改钉钉代理" class="headerlink" title="修改钉钉代理"></a>修改钉钉代理</h4><p>在钉钉登陆界面右上角找到设置代理页面，改为Fiddler使用的代理地址和端口。</p><p>(代理地址通常为本机地址127.0.0.1，端口默认为8888)</p><p>提示：新版钉钉会自动使用本机浏览器代理，因此使用新版钉钉时配置好Fiddler后无需单独设置钉钉代理。</p><h3 id="引入vConsole-js"><a href="#引入vConsole-js" class="headerlink" title="引入vConsole.js"></a>引入vConsole.js</h3><p>在Fiddler的自定义脚本（FiddlerScript）界面找到<strong>OnBeforeResponse</strong>函数，并添加以下代码。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var sToInsert = &quot;&lt;script src=&#x27;https://fastly.jsdelivr.net/gh/Tencent/vConsole@3.8.1/dist/vconsole.min.js&#x27;&gt;&lt;/script&gt;&lt;script&gt;var vConsole = new VConsole();&lt;/script&gt;&quot;;</span><br><span class="line">        oSession.utilDecodeResponse();</span><br><span class="line">        oSession.utilReplaceOnceInResponse(&#x27;&lt;/head&gt;&#x27;, sToInsert + &#x27;&lt;/head&gt;&#x27;, 0);</span><br></pre></td></tr></table></figure><p><img src="https://p1.meituan.net/csc/c66279c888bb9e138fe793234b5aa4c459422.png"></p><p>注意：一些较老的教程给出的引入vConsole的代码中直接使用了vConsole在jsdeliver中的地址，但由于<a href="https://luotianyi.vc/6295.html">jsdeliver在国内无法使用</a>会导致引用失败。只需将代码中的<code>http://cdn.jsdelivr.net</code>替换为<code>http://fastly.jsdelivr.net</code>即可。</p>]]></content:encoded>
+      
+      
+      
+      
+      <comments>https://www.tcea.top/2022/12/20/dingtalk_liverecord_download/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>下载地址模板&amp;测试</title>
