@@ -6,7 +6,7 @@
   <link href="https://www.tcea.top/atom.xml" rel="self"/>
   
   <link href="https://www.tcea.top/"/>
-  <updated>2022-12-21T05:45:08.584Z</updated>
+  <updated>2022-12-21T05:47:13.652Z</updated>
   <id>https://www.tcea.top/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://www.tcea.top/2022/12/21/dingtalk_live_share/"/>
     <id>https://www.tcea.top/2022/12/21/dingtalk_live_share/</id>
     <published>2022-12-21T04:03:59.673Z</published>
-    <updated>2022-12-21T05:45:08.584Z</updated>
+    <updated>2022-12-21T05:47:13.652Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>通过DPlayer和flv.js实现去客户端的网课直播观看(不支持评论互动)</p><span id="more"></span><p>12.21下午生物</p><script src="https://fastly.jsdelivr.net/npm/flv.js@1.5.0/dist/flv.min.js"></script><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","loop":true,"video":{"url":"https://dtlive-sz.dingtalk.com/live_hp/fcddd800-a59b-4aa0-905e-76b7b5f545db.flv?app_type=win&auth_key=1674175799-0-0-678d189ba4ebfd436425c5517438e872&token=b7b8d23d280cba27a7dddffad53691dccFCIt3w8E6XZuZZ0ws6q7ZiYZu0l5fzx60NjCkHSKzobROpU5h4kpJTCmB6mpOd8woj5rZiVGFAqKpMhM5buuKmTLmCbMrY_MSQl5O-l2ZY=&version=6.5.50-Release.11089104"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>通过DPlayer和flv.js实现去客户端的网课直播观看(不支持评论互动)</p><span id="more"></span><p>12.21下午生物</p><script src="https://fastly.jsdelivr.net/npm/flv.js@1.5.0/dist/flv.min.js"></script><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://dtlive-sh.dingtalk.com/live/39cb9e76-9eae-443c-b51c-f649e4200c0c.flv?app_type=win&auth_key=1674193416-0-0-16e630f9a3d97eb31584613b7c68b8dc&token=bf648d29c0aca650e9707b5d90e776f2DyTrEcB8bmS2h51tkaG6FrqbFO_oN6BuGjwt5mb3T_pB4Kx1tYAdTS5e0f2l6MD7TE3kWvgpa0Blkd-JqDFZXdci_t3myeEDL5s882AIYao=&version=6.5.50-Release.11089104"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
     
     
     <summary type="html">&lt;p&gt;通过DPlayer和flv.js实现去客户端的网课直播观看(不支持评论互动)&lt;/p&gt;</summary>
