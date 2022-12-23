@@ -6,7 +6,7 @@
   <link href="https://www.tcea.top/atom.xml" rel="self"/>
   
   <link href="https://www.tcea.top/"/>
-  <updated>2022-12-21T05:47:13.652Z</updated>
+  <updated>2022-12-23T12:45:57.309Z</updated>
   <id>https://www.tcea.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>高考倒计时控件测试</title>
+    <link href="https://www.tcea.top/2022/12/23/countdown_template/"/>
+    <id>https://www.tcea.top/2022/12/23/countdown_template/</id>
+    <published>2022-12-23T12:45:29.474Z</published>
+    <updated>2022-12-23T12:45:57.309Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="box" ><article class="message is-info"><div class="message-header">2023高考倒计时</div><div class="message-body"><div class="gn_box">      <h3>距2023年高考还有</h3><center> <div id="CountMsg" class="HotDate"><span id="t_d">165 天</span><span id="t_h">3 时</span><span id="t_m">26 分</span><span id="t_s">46 秒</span></div></center> <script type="text/javascript">  function getRTime() {        var EndTime = new Date('2023/06/7 00:09:00');       var NowTime = new Date();       var t = EndTime.getTime() - NowTime.getTime();              var d = Math.floor(t / 1000 / 60 / 60 / 24);              var h = Math.floor(t / 1000 / 60 / 60 % 24);              var m = Math.floor(t / 1000 / 60 % 60);              var s = Math.floor(t / 1000 % 60);      var day = document.getElementById("t_d");     if (day != null) {         day.innerHTML = d + " 天";        }     var hour = document.getElementById("t_h");     if (hour != null) {         hour.innerHTML = h + " 时";       }     var min = document.getElementById("t_m");     if (min != null) {         min.innerHTML = m + " 分";        }     var sec = document.getElementById("t_s");     if (sec != null) {         sec.innerHTML = s + " 秒";     } }      setInterval(getRTime, 1000);      </script> </div></div></article></div><span id="more"></span><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;box&quot; &gt;</span><br><span class="line">&#123;% raw %&#125;&lt;article class=&quot;message is-info&quot;&gt;&lt;div class=&quot;message-header&quot;&gt;&#123;% endraw %&#125;</span><br><span class="line">2023高考倒计时</span><br><span class="line">&#123;% raw %&#125;&lt;/div&gt;&lt;div class=&quot;message-body&quot;&gt;&#123;% endraw %&#125;</span><br><span class="line">&lt;div class=&quot;gn_box&quot;&gt;      &lt;h3&gt;距2023年高考还有&lt;/h3&gt;&lt;center&gt; &lt;div id=&quot;CountMsg&quot; class=&quot;HotDate&quot;&gt;&lt;span id=&quot;t_d&quot;&gt;165 天&lt;/span&gt;&lt;span id=&quot;t_h&quot;&gt;3 时&lt;/span&gt;&lt;span id=&quot;t_m&quot;&gt;26 分&lt;/span&gt;&lt;span id=&quot;t_s&quot;&gt;46 秒&lt;/span&gt;&lt;/div&gt;&lt;/center&gt; &lt;script type=&quot;text/javascript&quot;&gt;  function getRTime() &#123;        var EndTime = new Date(&#x27;2023/06/7 00:09:00&#x27;);       var NowTime = new Date();       var t = EndTime.getTime() - NowTime.getTime();              var d = Math.floor(t / 1000 / 60 / 60 / 24);              var h = Math.floor(t / 1000 / 60 / 60 % 24);              var m = Math.floor(t / 1000 / 60 % 60);              var s = Math.floor(t / 1000 % 60);      var day = document.getElementById(&quot;t_d&quot;);     if (day != null) &#123;         day.innerHTML = d + &quot; 天&quot;;        &#125;     var hour = document.getElementById(&quot;t_h&quot;);     if (hour != null) &#123;         hour.innerHTML = h + &quot; 时&quot;;       &#125;     var min = document.getElementById(&quot;t_m&quot;);     if (min != null) &#123;         min.innerHTML = m + &quot; 分&quot;;        &#125;     var sec = document.getElementById(&quot;t_s&quot;);     if (sec != null) &#123;         sec.innerHTML = s + &quot; 秒&quot;;     &#125; &#125;      setInterval(getRTime, 1000);      &lt;/script&gt; &lt;/div&gt;</span><br><span class="line">&#123;% raw %&#125;&lt;/div&gt;&lt;/article&gt;&#123;% endraw %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;div class=&quot;box&quot; &gt;
+&lt;article class=&quot;message is-info&quot;&gt;&lt;div class=&quot;message-header&quot;&gt;
+2023高考倒计时
+&lt;/div&gt;&lt;div class=&quot;message-body&quot;&gt;
+&lt;div class=&quot;gn_box&quot;&gt;      &lt;h3&gt;距2023年高考还有&lt;/h3&gt;&lt;center&gt; &lt;div id=&quot;CountMsg&quot; class=&quot;HotDate&quot;&gt;&lt;span id=&quot;t_d&quot;&gt;165 天&lt;/span&gt;&lt;span id=&quot;t_h&quot;&gt;3 时&lt;/span&gt;&lt;span id=&quot;t_m&quot;&gt;26 分&lt;/span&gt;&lt;span id=&quot;t_s&quot;&gt;46 秒&lt;/span&gt;&lt;/div&gt;&lt;/center&gt; &lt;script type=&quot;text/javascript&quot;&gt;  function getRTime() {        var EndTime = new Date(&#39;2023/06/7 00:09:00&#39;);       var NowTime = new Date();       var t = EndTime.getTime() - NowTime.getTime();              var d = Math.floor(t / 1000 / 60 / 60 / 24);              var h = Math.floor(t / 1000 / 60 / 60 % 24);              var m = Math.floor(t / 1000 / 60 % 60);              var s = Math.floor(t / 1000 % 60);      var day = document.getElementById(&quot;t_d&quot;);     if (day != null) {         day.innerHTML = d + &quot; 天&quot;;        }     var hour = document.getElementById(&quot;t_h&quot;);     if (hour != null) {         hour.innerHTML = h + &quot; 时&quot;;       }     var min = document.getElementById(&quot;t_m&quot;);     if (min != null) {         min.innerHTML = m + &quot; 分&quot;;        }     var sec = document.getElementById(&quot;t_s&quot;);     if (sec != null) {         sec.innerHTML = s + &quot; 秒&quot;;     } }      setInterval(getRTime, 1000);      &lt;/script&gt; &lt;/div&gt;
+&lt;/div&gt;&lt;/article&gt;
+&lt;/div&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>居家学习钉钉直播分享-12.21</title>
