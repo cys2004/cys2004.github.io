@@ -17,19 +17,6 @@
     
     
     <entry>
-      <title>居家学习钉钉直播分享-12.21</title>
-      <link href="/2022/12/21/dingtalk_live_share/"/>
-      <url>/2022/12/21/dingtalk_live_share/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>通过DPlayer和flv.js实现去客户端的网课直播观看(不支持评论互动)</p><span id="more"></span><p>12.21下午生物</p><script src="https://fastly.jsdelivr.net/npm/flv.js@1.5.0/dist/flv.min.js"></script><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://dtlive-sh.dingtalk.com/live/39cb9e76-9eae-443c-b51c-f649e4200c0c.flv?app_type=win&auth_key=1674193416-0-0-16e630f9a3d97eb31584613b7c68b8dc&token=bf648d29c0aca650e9707b5d90e776f2DyTrEcB8bmS2h51tkaG6FrqbFO_oN6BuGjwt5mb3T_pB4Kx1tYAdTS5e0f2l6MD7TE3kWvgpa0Blkd-JqDFZXdci_t3myeEDL5s882AIYao=&version=6.5.50-Release.11089104"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>钉钉直播串流测试</title>
       <link href="/2022/12/21/dingtalk_live/"/>
       <url>/2022/12/21/dingtalk_live/</url>
@@ -48,6 +35,19 @@
       <url>/2022/12/20/dingtalk_liverecord_download/</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>不出所料，我在学校集中隔离时被检出新冠阳性，因而不得不居家学习。于是，就有了这一次的旧活重整。</p><span id="more"></span>        <div id="aplayer-AvLhVYZL" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-AvLhVYZL"),            narrow: false,            autoplay: false,            showlrc: 3,            music: {              title: "赴梦",              author: "音阙诗听,小魂",              url: "https://files.catbox.moe/c8rv2w.mp3",              pic: "https://p0.meituan.net/csc/c10add4ff3630ebd70af582681006680147805.jpg",              lrc: "https://files.catbox.moe/2p1gtn.lrc"            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><h3 id="配置代理"><a href="#配置代理" class="headerlink" title="配置代理"></a>配置代理</h3><h4 id="配置Fiddler"><a href="#配置Fiddler" class="headerlink" title="配置Fiddler"></a>配置Fiddler</h4><p>在Fiddler里启用解密HTTPS流量并安装好根证书（不了解根证书的话勾选“解密HTTPS流量”后在弹出的窗口里一路点“是”即可），同时确保Fiddler为系统默认代理。</p><p><img src="https://p0.meituan.net/csc/732ddebc7a986453f3819b63c5bd57ff15397.png"></p><h4 id="修改钉钉代理"><a href="#修改钉钉代理" class="headerlink" title="修改钉钉代理"></a>修改钉钉代理</h4><p>在钉钉登陆界面右上角找到设置代理页面，改为Fiddler使用的代理地址和端口。</p><p>(代理地址通常为本机地址127.0.0.1，端口默认为8888)</p><p>提示：新版钉钉会自动使用本机浏览器代理，因此使用新版钉钉时配置好Fiddler后无需单独设置钉钉代理。</p><h3 id="引入vConsole-js"><a href="#引入vConsole-js" class="headerlink" title="引入vConsole.js"></a>引入vConsole.js</h3><p>在Fiddler的自定义脚本（FiddlerScript）界面找到<strong>OnBeforeResponse</strong>函数，并添加以下代码。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var sToInsert = &quot;&lt;script src=&#x27;https://fastly.jsdelivr.net/gh/Tencent/vConsole@3.8.1/dist/vconsole.min.js&#x27;&gt;&lt;/script&gt;&lt;script&gt;var vConsole = new VConsole();&lt;/script&gt;&quot;;</span><br><span class="line">        oSession.utilDecodeResponse();</span><br><span class="line">        oSession.utilReplaceOnceInResponse(&#x27;&lt;/head&gt;&#x27;, sToInsert + &#x27;&lt;/head&gt;&#x27;, 0);</span><br></pre></td></tr></table></figure><p><img src="https://p1.meituan.net/csc/c66279c888bb9e138fe793234b5aa4c459422.png"></p><p>注意：一些较老的教程给出的引入vConsole的代码中直接使用了vConsole在jsdeliver中的地址，但由于<a href="https://luotianyi.vc/6295.html">jsdeliver在国内无法使用</a>会导致引用失败。只需将代码中的<code>http://cdn.jsdelivr.net</code>替换为<code>http://fastly.jsdelivr.net</code>即可。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>简单聊一聊Android手机的ROOT</title>
+      <link href="/2022/12/16/android_root/"/>
+      <url>/2022/12/16/android_root/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>  简单聊一聊我对android手机ROOT的看法</p><span id="more"></span><script>console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover.jpg)");</script><h2 id="何谓“ROOT”？"><a href="#何谓“ROOT”？" class="headerlink" title="何谓“ROOT”？"></a>何谓“ROOT”？</h2><p>现代操作系统一般是多用户的，也就是说，在同一台机器上可以为不同的使用者建立多个账户。在通常情况下，这些用户属于普通用户。这些普通用户能同时登录这台计算机，计算机对这些用户分配一定的资源，普通用户在所分配到的资源内进行各自的操作，相互之间不受影响。</p><p>但是，这些普通用户的权限是有限制的，并且用户数量过多也会造成管理上的不便。因此现代操作系统中引入了“特权用户”这一概念。这一用户在一个操作系统内是唯一的，且拥有系统的完全控制权限，可以对系统和硬件进行任意操作。</p><p>Windows系统内的特权用户叫做“administrator(超级管理员)”（为了突出重点和便于理解，此处简化了Windows系统的权限模型，不讨论各类权限组以及提权行为，仅讨论能够被登录的账户。而通常情况下在Windows中SYSTEM和TrustedInstaller属于系统保留账户，不允许以正常方式登陆进入，因此不做讨论）。通常情况下，我们在日常使用Windows时不会感觉到有权限在阻挠你去做某件事情，是因为我们以Administrator身份登陆了系统。</p>]]></content>
       
       
       
