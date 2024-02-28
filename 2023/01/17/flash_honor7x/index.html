@@ -1,0 +1,241 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 6.3.0"/><meta name="hexo-theme" content="https://github.com/chiyuki0325/hexo-theme-stellaris/tree/1.9.999"/><meta charSet="utf-8"/><meta http-equiv="X-DNS-Prefetch-Control" content="on"/><link rel="dns-prefetch" href="https://fastly.jsdelivr.net"/><link rel="preconnect" href="https://fastly.jsdelivr.net" crossorigin="true"/><link rel="dns-prefetch" href="https://cdn.bootcdn.net"/><link rel="preconnect" href="https://cdn.bootcdn.net" crossorigin="true"/><meta name="renderer" content="webkit"/><meta name="force-rendering" content="webkit"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="HandheldFriendly" content="true"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/><meta name="theme-color" content="#f8f8f8"/><title>辞旧迎新——荣耀畅玩7X（BND-AL10）刷机手记 - 白鼠的小站</title><meta property="og:image" content="https://m.360buyimg.com/babel/jfs/t1/221156/11/14683/669884/63c69b14Fb5763414/3d20dbd73169c90d.jpg"/><meta property="og:type" content="article"/><meta property="og:title" content="辞旧迎新——荣耀畅玩7X（BND-AL10）刷机手记"/><meta property="og:url" content="https://www.tcea.top/2023/01/17/flash_honor7x/index.html"/><meta property="og:site_name" content="白鼠的小站"/><meta property="og:description" content="由于系统崩坏等一系列原因，我在春节前夕彻底告别了伴随我两年之久的旧系统。本文简单记录了我的刷机过程。如有疑问，欢迎评论区交流。"/><meta property="og:locale" content="zh_CN"/><meta property="article:modified_time" content="2023-01-17T00:00:00.000Z"/><meta property="article:author" content="白鼠"/><meta name="article:tag" content="刷机"/><meta name="article:tag" content="Android"/><meta property="twitter:card" content="summary_large_image"/><meta name="description" content="由于系统崩坏等一系列原因，我在春节前夕彻底告别了伴随我两年之久的旧系统。本文简单记录了我的刷机过程。如有疑问，欢迎评论区交流。"/><link rel="stylesheet" href="/css/main.css"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" class="aplayer-style-marker">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-script-marker"></script>
+</head><body><div class="l_body" id="start"><aside class="l_left" layout="post"><header class="header "><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(&quot;https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp&quot;)"></div><img no-lazy="true" class="avatar lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://p0.meituan.net/csc/9d92e3239ccf0a799a2f00418564f4b2108562.png" alt="avatar"/></a><a class="title" href="/"><div class="main" ff="title">白鼠的小站</div></a></div><nav class="menu dis-select "><a class="nav-item active" href="/">文章</a><a class="nav-item " href="/friends/">友链</a><a class="nav-item " href="/about/">关于</a></nav></header><div class="widgets"><div class="widget-wrapper toc single" id="toc"><div class="widget-header cap dis-select"><span class="name">辞旧迎新——荣耀畅玩7X（BND-AL10）刷机手记</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%B7%E5%85%A5%E5%8E%9F%E5%8E%82%E5%9B%BA%E4%BB%B6"><span class="toc-text">刷入原厂固件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE"><span class="toc-text">备份数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E5%9B%BA%E4%BB%B6%E5%92%8CTWRP-Recovery"><span class="toc-text">获取固件和TWRP Recovery</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%94%81Bootloader"><span class="toc-text">解锁Bootloader</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%B7%E5%85%A5TWRP-Recovery"><span class="toc-text">刷入TWRP Recovery</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%B7%E5%85%A5%E5%9B%BA%E4%BB%B6"><span class="toc-text">刷入固件</span></a></li></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%B7%E5%85%A5Magisk"><span class="toc-text">刷入Magisk</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E8%A1%A5RAMDISK"><span class="toc-text">修补RAMDISK</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%B7%E5%85%A5%E4%BF%AE%E8%A1%A5%E5%90%8E%E7%9A%84RAMDISK"><span class="toc-text">刷入修补后的RAMDISK</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%B7%E5%85%A5LSPosed"><span class="toc-text">刷入LSPosed</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="toc-text">参考文章</span></a></li></ol></ol></div></div></div><widget class="widget-wrapper tagcloud"><div class="widget-header cap theme dis-select"><span class="name">标签云</span></div><div class="widget-body fs14"><a href="/tags/Android/" style="font-size: 10px;" class="tag -0">Android</a> <a href="/tags/Argo-Tunnel/" style="font-size: 10px;" class="tag -0">Argo Tunnel</a> <a href="/tags/Bulma/" style="font-size: 10px;" class="tag -0">Bulma</a> <a href="/tags/Cloudflare/" style="font-size: 10px;" class="tag -0">Cloudflare</a> <a href="/tags/Fiddler/" style="font-size: 10px;" class="tag -0">Fiddler</a> <a href="/tags/HTML/" style="font-size: 10px;" class="tag -0">HTML</a> <a href="/tags/Rust/" style="font-size: 10px;" class="tag -0">Rust</a> <a href="/tags/Typora/" style="font-size: 10px;" class="tag -0">Typora</a> <a href="/tags/%E4%B8%AA%E4%BA%BA%E7%9B%B8%E5%85%B3/" style="font-size: 20px;" class="tag -10">个人相关</a> <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" style="font-size: 10px;" class="tag -0">内网穿透</a> <a href="/tags/%E5%88%B7%E6%9C%BA/" style="font-size: 10px;" class="tag -0">刷机</a> <a href="/tags/%E6%8A%80%E5%B7%A7/" style="font-size: 10px;" class="tag -0">技巧</a> <a href="/tags/%E6%8A%93%E5%8C%85/" style="font-size: 10px;" class="tag -0">抓包</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 20px;" class="tag -10">测试</a> <a href="/tags/%E8%BD%AC%E8%BD%BD/" style="font-size: 10px;" class="tag -0">转载</a></div></widget><widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" placeholder="文章搜索" data-filter=""/></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget></div><footer class="footer dis-select"><div class="social-wrap"><a class="social on-click-event" title="" href="https://github.com/cys2004/" target="_blank" rel="external nofollow noopener noreferrer" data-on-click=""><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/08a41b181ce68.svg"/></a></div></footer></aside><div class="l_main"><div><div class="bread-nav fs12"><div class="left"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div><div id="post-meta"><span>发布于 <time dateTime="2023-01-17T00:00:00.000Z">2023-01-17</time>，更新于 <time dateTime="2023-01-17T00:00:00.000Z">2023-01-17</time></span><span id="outdated"></span></div></div></div><article class="md-text content post   reveal" id="辞旧迎新——荣耀畅玩7X（BND-AL10）刷机手记"><h1 class="article-title"><span>辞旧迎新——荣耀畅玩7X（BND-AL10）刷机手记</span></h1><div><p>由于系统崩坏等一系列原因，我在春节前夕彻底告别了伴随我两年之久的旧系统。本文简单记录了我的刷机过程。如有疑问，欢迎评论区交流。</p>
+<span id="more"></span>
+
+
+        <div id="aplayer-SHdBQHEj" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-SHdBQHEj"),
+            narrow: false,
+            autoplay: false,
+            showlrc: 3,
+            music: {
+              title: "扬旗鸣鼓【bilibili音乐·2022虚拟歌手贺岁纪单品】",
+              author: "祈Inory, 多多poi",
+              url: "https://files.catbox.moe/yba5oj.mp3",
+              pic: "https://z1.ax1x.com/2023/11/05/piQcrdK.jpg",
+              lrc: "https://files.catbox.moe/thzv94.lrc"
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
+<h2 id="刷入原厂固件"><a href="#刷入原厂固件" class="headerlink" title="刷入原厂固件"></a>刷入原厂固件</h2><h3 id="备份数据"><a href="#备份数据" class="headerlink" title="备份数据"></a>备份数据</h3><p><strong>数据无价，备份数据是刷机前的首要准备工作。</strong></p>
+<p>值得一提的是，在备份Via浏览器的书签时，我发现Via的开发者迫于服务器压力取消了云同步书签的功能。</p>
+<p>所以说，Via浏览器还是很受欢迎的嘛。</p>
+<h3 id="获取固件和TWRP-Recovery"><a href="#获取固件和TWRP-Recovery" class="headerlink" title="获取固件和TWRP Recovery"></a>获取固件和TWRP Recovery</h3><article class="message is-warning"><div class="message-header">
+<p>注意</p>
+</div><div class="message-body">
+<p>如无必要，<strong>强烈不建议使用奇兔刷机等刷机工具提供的固件以及一键刷机服务。</strong></p>
+</div></article>
+
+<p>如果想继续使用国行版系统的话，可以通过华为手机助手的升级或降级操作下载原厂固件。其下载的固件一般存储在<code>C:\Users\用户名\Documents\HiSuite\ROM</code>目录下。</p>
+<p>但我此次想要尝鲜国际版固件，因此需要手动寻找匹配的固件。</p>
+<p>在Google上以“BND-AL10 firmware stock”为关键字搜索，成功找到<a target="_blank" rel="noopener" href="https://firmwarefile.com/honor-7x-bnd-al10">所需固件</a>。</p>
+<p><code>Honor_7X_BND-AL10_9.1.0.140_C675E2R1P1T8_Firmware_9.0.0_R3_EMUI9.1.0_05015DEE_Dload.zip</code></p>
+<p>由文件名可知该固件为原厂固件，系统版本为EMUI9.1（Android9.0），国家地区代码为C675，<a target="_blank" rel="noopener" href="https://onfix.cn/course/3836">查表</a>后确认为印度版固件，自带完整的Google服务。</p>
+<p>在<a target="_blank" rel="noopener" href="https://forum.xda-developers.com/">XDA论坛</a>上以“BND-AL10 TWRP”为关键字搜索得到<a target="_blank" rel="noopener" href="https://forum.xda-developers.com/t/compilation-firmware-flash-emui-8-0-0-honor-7x-all-models.3833875/">该机型的TWRP Recovery文件</a>。</p>
+<article class="message is-warning"><div class="message-header">
+<p>注意</p>
+</div><div class="message-body">
+<p><strong>该Recovery仅适配Honor 7X的出厂系统EMUI 8.0.0，如果后续通过OTA升级到EMUI 9.0&#x2F;9.1，需要先通过华为手机助手降级到EMUI 8.0.0，然后再刷入TWRP Recovery。</strong></p>
+</div></article>
+
+<h3 id="解锁Bootloader"><a href="#解锁Bootloader" class="headerlink" title="解锁Bootloader"></a>解锁Bootloader</h3><p>鉴于华为早在2018年就关闭了官方获取Bootloader解锁码的通道，现在只能通过非官方途径解锁Bootloader。此处建议通过淘宝等平台远程租用猎人加密狗等工具进行解锁。如果对自己没有信心，也可以直接购买第三方解锁服务，但价格会高出不少。</p>
+<p>我的设备已经解锁了Bootloader，因此本次刷机无需进行这一步。</p>
+<article class="message is-warning"><div class="message-header">
+<p>注意</p>
+</div><div class="message-body">
+<p><strong>解锁Bootloader会清除个人数据，务必做好备份工作！</strong></p>
+</div></article>
+
+<h3 id="刷入TWRP-Recovery"><a href="#刷入TWRP-Recovery" class="headerlink" title="刷入TWRP Recovery"></a>刷入TWRP Recovery</h3><ol>
+<li>在设备的开发者选项中启用USB调试，连接电脑后在手机弹出的对话框中授权USB调试。</li>
+<li>打开adb命令行，确认设备连接状态。<br><code>adb devices</code></li>
+<li>通过adb重启设备到fastboot模式<br><code>adb reboot fastboot</code></li>
+<li>刷入TWRP<br><code>fastboot flash recovery [TWRP Recovery的位置]</code></li>
+<li>重启设备<br><code>fastboot reboot</code></li>
+</ol>
+<h3 id="刷入固件"><a href="#刷入固件" class="headerlink" title="刷入固件"></a>刷入固件</h3><ol>
+<li>解压出固件中的卡刷包<code>/Firmware/dload/update_sd.zip</code>。</li>
+<li>通过adb推送刷机包到设备存储。<br><code>adb push [卡刷包的完整路径] /sdcard</code></li>
+<li>通过adb重启设备到TWRP Recovery<br><code>adb reboot recovery</code></li>
+<li>在TWRP中进入“安装”界面，选中刚才推送的卡刷包，勾选“完成后重启”，滑动滑块确认安装。</li>
+<li>等待安装结束后设备重启进入新系统。</li>
+</ol>
+<h2 id="刷入Magisk"><a href="#刷入Magisk" class="headerlink" title="刷入Magisk"></a>刷入Magisk</h2><h3 id="修补RAMDISK"><a href="#修补RAMDISK" class="headerlink" title="修补RAMDISK"></a>修补RAMDISK</h3><ol>
+<li>解压出卡刷包<code>update_sd.zip</code>中的<code>UPDATE.APP</code>文件</li>
+<li>下载HuaweiUpdateExtractor并打开，在<code>Settings</code>选项卡中取消勾选<code>Verify header checksum</code>。</li>
+<li>将刚才解压得到的<code>UPDATE.APP</code>文件拖动到程序窗口中，找到<code>RECOVERY_RAMDIS.img</code>，右键导出。</li>
+<li>使用adb将刚才导出的文件推送到设备存储。<br><code>adb push [RECOVERY_RAMDIS.img的位置] /sdcard</code></li>
+<li>在设备上安装<code>Magisk Manager</code>，点击“安装”——“安装到Recovery”——“选择并修补一个文件”，然后选择刚才推送到设备存储中的<code>RECOVERY_RAMDIS.img</code>，等待文件修补完成。</li>
+<li>文件修补完成后，将设备存储Downloads目录下生成的以<code>magisk_patched</code>为文件名开头的文件复制到电脑上。</li>
+</ol>
+<h3 id="刷入修补后的RAMDISK"><a href="#刷入修补后的RAMDISK" class="headerlink" title="刷入修补后的RAMDISK"></a>刷入修补后的RAMDISK</h3><ol>
+<li><p>使用adb重启到fastboot模式。<br><code>adb reboot fastboot</code></p>
+</li>
+<li><p>在fastboot模式下刷入修补过的ramdisk文件。<br><code>fastboot flash recovery_ramdisk [magisk_patched-xxx.img文件的位置]</code></p>
+</li>
+<li><p>刷入完成后重启手机到正常系统。<br><code>fastboot reboot</code></p>
+</li>
+<li><p>在正常系统中通过adb重启到Recovery。<br><code>adb reboot recovery</code></p>
+<p><strong>此时的Recovery分区已经刷入了Magisk，执行此命令后将进入带有Magisk环境的系统，而不是先前的TWRP Recovery。</strong></p>
+</li>
+<li><p>进入系统后，打开Magisk Manager，点击“安装”——“安装到Recovery”——“直接安装（推荐）”，等待Magisk安装完成后重启手机，自动进入带有Magisk的系统。</p>
+</li>
+</ol>
+<article class="message is-warning"><div class="message-header">
+<p>注意</p>
+</div><div class="message-body">
+<p>以这种方式安装的Magisk位于Recovery分区内，需要从Recovery分区引导启动系统。由于 Magisk和Recovery都在同一个分区，因此进入系统或Recovery取决于开机时按下音量键时间的长短。即：</p>
+<p>正常开机——进入到不含Magisk的系统；</p>
+<p>同时按下音量+键和电源键开机——第一屏出现——放开所有按键——进入到启用Magisk的系统；</p>
+<p>同时按下音量+键和电源键开机——第一屏出现——继续按音量+键——进入 Recovery。</p>
+<p>但是，由于Magisk App此时已经了解设备的状态，因此可以直接在Magisk App中普通重启到启用Magisk的系统。</p>
+</div></article>
+
+<h2 id="刷入LSPosed"><a href="#刷入LSPosed" class="headerlink" title="刷入LSPosed"></a>刷入LSPosed</h2><ol>
+<li>在Magisk Manager的设置中启用Zygisk并重启。</li>
+<li>从LSPosed的<a target="_blank" rel="noopener" href="https://github.com/LSPosed/LSPosed/releases">官方仓库</a>中下载基于Zygisk的LSPosed模块压缩包（LSPosed-xxx-xxxx-zygisk-release.zip）。</li>
+<li>在Magisk中安装模块并重启后即可使用LSPosed。</li>
+</ol>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/416456337">[新手必看]华为刷机你一定要知道的 - 某贼</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv16261842">华为EMUI、HarmonyOS 系统ROOT安装Magisk(面具) - 东山海岛</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq1337715208/article/details/115922514">Magisk 安装说明 - 锦夏挽秋（译）</a></p>
+<a class="tag is-dark is-medium" href="https://github.com/Stability-AI/StableDiffusion" target="_blank">
+<span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;文章头图由Stable Diffusion生成 </a>
+</div><div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a>许可协议，转载请注明出处。</p>
+</div></section></div></article><div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2023/01/19/plugin_test/">Hexo插件测试</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2022/12/16/bulma_template/">【转载】活用 Bulma 美化 Icarus 文章</a></div></section></div><div class="related-wrap reveal" id="related-posts"><section class="header"><div class="title cap theme">您可能感兴趣的文章</div></section><section class="body"><div class="related-posts"><a class="item" href="/2022/12/08/argo_tunnel/" title="Cloudflare Argo Tunnel实现零成本内网穿透"><span class="title">Cloudflare Argo Tunnel实现零成本内网穿透</span><span class="excerpt">Cloudflare Argo Tunnel 内网穿透演示站：猹盘
+众所周知，国内的运营商早在十多年前便封锁了家用宽带的80、443等端口，因此使用家宽建站需要改用其他端口。这样一来，用户在访问自建网络服务时就必须带端口号访问，不仅会使URL繁琐难看，而且有暴露源站引来攻击的风险。使用Frp等传统的内网穿透服务是常用的解决方案，但由于政策原因，国内的内网穿透服务只能绑定备案过的域名，况且长期购买稳定的内网穿透服务会是一笔不小的开支。此时，老牌云服务商Cloudflare免费提供的Argo Tunnel内网穿透服务就不失为一个好的选择。</span></a></div></section></div><div class="related-wrap md-text reveal" id="comments"><div class="cmt-title cap theme">快来参与讨论吧</div><div class="cmt-body twikoo"><div id="twikoo_container" comment_id=""><svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg></div></div></div></div><footer class="page-footer reveal fs12"><hr/><div class="sitemap"><div class="sitemap-group"><span class="fs14">博客</span><a href="/">近期</a><a href="/">分类</a><a href="/">标签</a><a href="/">归档</a></div><div class="sitemap-group"><span class="fs14">项目</span><a href="/">开源库</a></div><div class="sitemap-group"><span class="fs14">社交</span><a href="/">友链</a><a href="/">留言板</a></div><div class="sitemap-group"><span class="fs14">更多</span><a href="/">关于本站</a><a href="/">GitHub</a></div></div><div class="text"><p>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+<p>本站由 <a href="https://www.tcea.top/">@白鼠</a> 创建，使用 <a target="_blank" rel="noopener" href="https://github.com/chiyuki0325/hexo-theme-stellaris">Stellaris</a> 作为主题。</p>
+<div>由 <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a> 强力驱动</div></div></footer><div class="float-panel mobile-only blur" style="display:none"><button type="button" class="sidebar-toggle mobile on-click-event" id="toggle-sidebar" data-on-click="sidebar.toggle();"><svg class="icon" style="width:1em;height:1em;vertical-align:middle;fill:currentColor;overflow:hidden" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg></button></div></div></div><div class="scripts"><script src="https://cdn.bootcdn.net/ajax/libs/instantclick/3.1.0/instantclick.min.js" data-no-instant="true"></script><script data-no-instant="true" type="text/javascript">InstantClick.init();</script><script type="text/javascript">
+      stellar = {
+        root: '/',
+        // 懒加载 css https://github.com/filamentgroup/loadCSS
+        loadCSS: (href, before, media, attributes) => {
+          var doc = window.document;
+          var ss = doc.createElement("link");
+          var ref;
+          if (before) {
+            ref = before;
+          } else {
+            var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+            ref = refs[refs.length - 1];
+          }
+          var sheets = doc.styleSheets;
+          if (attributes) {
+            for (var attributeName in attributes) {
+              if (attributes.hasOwnProperty(attributeName)) {
+                ss.setAttribute(attributeName, attributes[attributeName]);
+              }
+            }
+          }
+          ss.rel = "stylesheet";
+          ss.href = href;
+          ss.media = "only x";
+          function ready(cb) {
+            if (doc.body) {
+              return cb();
+            }
+            setTimeout(function () {
+              ready(cb);
+            });
+          }
+          ready(function () {
+            ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+          });
+          var onloadcssdefined = function (cb) {
+            var resolvedHref = ss.href;
+            var i = sheets.length;
+            while (i--) {
+              if (sheets[i].href === resolvedHref) {
+                return cb();
+              }
+            }
+            setTimeout(function () {
+              onloadcssdefined(cb);
+            });
+          };
+          function loadCB() {
+            if (ss.addEventListener) {
+              ss.removeEventListener("load", loadCB);
+            }
+            ss.media = media || "all";
+          }
+          if (ss.addEventListener) {
+            ss.addEventListener("load", loadCB);
+          }
+          ss.onloadcssdefined = onloadcssdefined;
+          onloadcssdefined(loadCB);
+          return ss;
+        },
+        // 从 butterfly 和 volantis 获得灵感
+        loadScript: (src, opt) => new Promise((resolve, reject) => {
+          var script = document.createElement('script');
+          script.src = src;
+          if (opt) {
+            for (let key of Object.keys(opt)) {
+              script[key] = opt[key]
+            }
+          } else {
+            // 默认异步，如果需要同步，第二个参数传入 {} 即可
+            script.async = true
+          }
+          script.onerror = reject
+          script.onload = script.onreadystatechange = function() {
+            const loadState = this.readyState
+            if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+            script.onload = script.onreadystatechange = null
+            resolve()
+          }
+          document.head.appendChild(script)
+        }),
+    
+        // https://github.com/jerryc127/hexo-theme-butterfly
+        jQuery: fn => stellaris.jQuery(fn)
+      };
+      stellar.github = 'https://github.com/chiyuki0325/hexo-theme-stellaris';
+      stellar.config = {
+        date_suffix: {
+          just: '刚刚',
+          min: '分钟前',
+          hour: '小时前',
+          day: '天前',
+          month: '个月前',
+        },
+      };
+    
+      stellar.plugins = Object.assign({"jQuery":"https://fastly.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js","stellar":{"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js","bvideo":"/js/plugins/bvideo.js"},"marked":"https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js","instant_click":{"js":"https://cdn.bootcdn.net/ajax/libs/instantclick/3.1.0/instantclick.min.js"},"lazyload":{"enabled":true,"js":"https://fastly.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js","transition":"blur"},"swiper":{"enabled":true,"css":"https://unpkg.com/swiper@11/swiper-bundle.min.css","js":"https://unpkg.com/swiper@11/swiper-bundle.min.js"},"scrollreveal":{"enabled":true,"js":"https://fastly.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1},"fancybox":{"enabled":true,"js":"https://fastly.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://fastly.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img, .vcontent img:not(.vemoji), .tag-plugin.image img"},"copycode":{"enabled":true,"js":"/js/plugins/copycode.js","default_text":"复制","success_text":"已复制"}})
+      stellar.tag_plugins = Object.assign({})
+      stellar.search = Object.assign({"service":"local_search","js":"/js/search/local_search.js","path":"/search.json"})
+
+      stellar.article = {
+        outdate_month: 6
+      };
+    </script><script src="/js/main.js" type="text/javascript" async="" data-no-instant="true"></script><script type="text/javascript" src="/js/check_outdated_browser.js" data-no-instant="true"></script><script data-no-instant="true">
+        function load_twikoo() {
+            if (!document.querySelectorAll("#twikoo_container")[0]) return;
+            stellar.loadScript('https://fastly.jsdelivr.net/npm/twikoo@1.4.0/dist/twikoo.all.min.js', {defer: true}).then(function () {
+                const el = document.getElementById("twikoo_container");
+                var path = el.getAttribute('comment_id');
+                if (!path) {
+                    path = decodeURI(window.location.pathname);
+                }
+                twikoo.init(Object.assign({"js":"https://fastly.jsdelivr.net/npm/twikoo@1.4.0/dist/twikoo.all.min.js","envId":"https://twikoo.tcea.top"}, {
+                    el: '#twikoo_container',
+                    path: path,
+                }));
+            });
+        }
+      InstantClick.on('change', () => {
+        load_twikoo();
+      });
+      window.addEventListener(
+          "load", load_twikoo, false
+      );
+    </script></div></body></html>
